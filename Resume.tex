@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Jared Tucker
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jared Tucker} \\ \vspace{1pt}
+    \small 0423-530-025 $|$ \href{mailto:jntucker02@gmail.com}{\underline{jntucker02@gmail.com}} $|$ \href{https://www.jtucker.io}{\underline{jtucker.io}} $|$ 
+    \href{https://www.linkedin.com/in/jared-tucker-00ba74250/}{\underline{Linkedin}} $|$
+    \href{https://github.com/Dawaad}{\underline{Github}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{Jan 2024 -- Present}
+      {Leidos Australia}{Melbourne, VIC}
+      \resumeItemListStart
+        \resumeItem{Contributed core technical design and implementation for migration of monolithic application to microservice architecture, architecting communication patterns using Kafka event streaming and designing service boundaries that improved system resilience and reduced deployment risk across a 12-engineer team.}
+        \resumeItem{
+Architected and developed 5+ production microservices in Kotlin/Spring Boot with MongoDB, implementing asynchronous event processing and further  optimized schema designs that reduced database load by 40\% and improved API response times from \~350ms to \~200ms for key endpoints}
+
+        \resumeItem{Designed and implemented real-time notification, communication and unread indicator systems embedded across the entire application suite, leveraging Kafka event streams and WebSocket connections to deliver sub-second updates across siloed user environments and international deployments with 99.9\% message delivery reliability}
+        
+        \resumeItem{
+
+Led technical redesign and restructure for an intelligent message routing service supporting international deployments, implementing a Kafka-based pipeline that would run complex data objects through a series of rule-based engines to determine its correct routing recipients based on dynamic guidelines and acceptance criteria. Improving routing speeds by 30\% and improved overall correctness of routing capabilities}
+
+
+        
+        \resumeItem{Designed and implemented real-time notification, communication and unread indicator systems embedded across the entire application suite, leveraging Kafka event streams and WebSocket connections to deliver sub-second updates across siloed user environments and international deployments with 99.9\% message delivery reliability}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Monash University}{Clayton, VIC}
+      {Bachelor of Computer Science}{Feb. 2021 -- November 2023}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Riven} $|$ \emph{ReactJs/NextJs Kotlin, Springboot, PostgreSQL, N8Ns}}{\href{https://github.com/rmr-studio/riven}{\underline{Github}}}
+          \resumeItemListStart
+            \resumeItem{
+Building a feature-complete CRM platform with fully customizable, drag-and-drop layouts supporting diverse business workflows, currently in final MVP phase approaching market launch}
+
+            \resumeItem{
+Engineered dynamic layout system extending Gridstack.js library with custom React components, enabling real-time collaborative editing and persistent configuration management and real time dimension awareness capabilities with automatic resizing based on dynamic content.}
+
+            \resumeItem{
+Integrating and developing a self-hosted N8N-based workflow automation engine, architecting a REST API bridge that allows users to build custom business process pipelines and event-driven automations without code}
+
+        
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Paladin} $|$ \emph{Kotlin, Kafka, RabbitMQ, Amazon SQS, PostgreSQL}}{\href{https://github.com/usepaladin/event-routing}{\underline{Github}}}
+          \resumeItemListStart
+            \resumeItem{Built a dynamic message routing system to fan consumed events from a central Kafka topic out to a dynamically configured range of external message brokers }
+            \resumeItem{Built internal message decryption/encryption services with support for supplied schema registry to support cross broker messaging (ie. Kafka to RabbitMQ to SQS, etc) }
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Flextask - Unihack 2023} $|$ \emph{ReactJS, FastAPI, OpenAI , MongoDB}}{  \href{https://github.com/Davit-G/barbell-squat-enthusiasts}{\underline{Github}} $|$
+    \href{https://devpost.com/software/quick-tasks}{\underline{Devpost}}}
+          \resumeItemListStart
+            \resumeItem{
+Utilized OpenAI’s natural language processing capabilities to analyse and understand the input description of project 
+ }
+            \resumeItem{Leveraged Machine learning algorithms to generate relevant subtasks based on the input description to help increase user productivity and workload management capabilities.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Kotlin, TypeScript, JavaScript, Java, Python, SQL, C\# }
+} \\
+     \textbf{Backend/Architecture}{: Spring Boot, Microservices Architecture, Event-Driven Design, Kafka, RESTful APIs, GraphQL/Wundergraph, MongoDB, PostgreSQL} \\
+     \textbf{Frontend/State Management}{: React, Next.js, TypeScript, Angular, Server-Side Rendering,  Zustand } \\
+     \textbf{Infrastructure/DevOps}{: Docker, Kubernetes, Keycloak (Identity \& Access Management), Git, Bash }
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
